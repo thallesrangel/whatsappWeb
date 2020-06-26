@@ -1,3 +1,12 @@
+
+$(document).ready(function(){
+    $('#mensagens').load("ver.php");
+    
+    var refreshId = setInterval( ver, 1000);
+    
+    $.ajaxSetup({ cache: false });
+});
+
 function ver() {
     var url;
     url = 'ver.php';
@@ -6,25 +15,26 @@ function ver() {
     });
 }
 
-    function enviar(){
-        var url;
-        var mensagem;
-        var enviando;
-        url = 'enviar.php';
-        mensagem = $('#mensagem').val();
-       
-        $('#mensagem').on('keyup', function(e){
-            if (e.which == 13){
-                var m = $(this).val();
-                m = mensagem.trim();
-                if(m.length >= 1){
-                    enviando = $.post(url,{mensagem:mensagem});
-                    enviando.done(function(){
-                        mensagem = '';
-                        $('#mensagens').animate({ scrollTop: 9999 }, 100);
-                        ver();
-                    });
-                }
-            }  
-        });
-    }
+function enviar(){
+    var url;
+    var enviando;
+    url = 'enviar.php';
+   
+    $('#mensagem').on('keyup', function(e){
+    
+        if (e.which == 13){
+           var mensagem = $('#mensagem').val();
+           document.querySelector('#mensagem').value = '';
+           console.log(mensagem);
+          
+            if(mensagem.length >= 1){
+                enviando = $.post(url,{mensagem:mensagem});
+                enviando.done(function(){
+                    $('#mensagem').val("");
+                    $('#mensagens').animate({ scrollTop: 9999 }, 100);
+                    ver();
+                });
+            }
+        }  
+    });
+}

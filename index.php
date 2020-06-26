@@ -14,19 +14,6 @@ $_SESSION['nome'] = 'Thalles Rangel Lopes';
     <script src="script.js"></script>
     <title>WhatsApp</title>
     <link rel="icon" href="img/icon.png">
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-        $('#mensagens').load("ver.php");
-        
-        var refreshId = setInterval(function(){
-            $('#mensagens').load("ver.php");
-        }, 500);
-        
-      $.ajaxSetup({ cache: false });
-      });
-
-    </script>
   </head>
 <body>
 
@@ -42,7 +29,7 @@ $_SESSION['nome'] = 'Thalles Rangel Lopes';
   <div id="mensagens">
   </div>
   <form onsubmit="enviar(); return false" method="POST">
-    <input autocomplete="off" type="text" name="mensagem" id="mensagem" placeholder="Digite uma mensagem" maxlength="50" />
+    <input type="text" name="mensagem" id="mensagem" placeholder="Digite uma mensagem" maxlength="50" />
   </form>
 
 </body>  
