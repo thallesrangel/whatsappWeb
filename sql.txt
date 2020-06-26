@@ -1,0 +1,10 @@
+create database chat;
+use chat;
+
+create table mensagem(
+    id int primary key auto_increment,
+    nome varchar(100),
+    mensagem varchar(220),
+    hora varchar(220) not null,
+    ip varchar(50) not null
+)

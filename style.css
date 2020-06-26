@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Sans-Serif;
+    color: #4b4b4b;
+}
+#mensagens{
+    width:auto;
+    height:75vh;
+    max-height: 75vh;
+    overflow: auto;
+    overflow-x: hidden;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    padding: 6px; 
+    margin: 4px;
+    background-image: url('img/chatbackground.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+input[type='text'] {
+    display: block;
+    width: 800px;
+    font-size: 14px;
+    padding: 6px; 
+    margin: 4px;
+    outline: 0;
+}
+
+p{
+    text-align: left;
+    word-wrap: break-all;
+}
+
+.sidebar{
+    float: left;
+    height: 100vh;
+    width: 25%;
+    background-color: #ecf0f1;
+}
+
+
+
+.menu{
+    background: #F3F3F3;
+    height: 60px;
+    border: 1px solid #bdc3c7;
+}
+.menu img{
+    padding: 5px 20px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+}
