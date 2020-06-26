@@ -25,7 +25,18 @@ $_SESSION['nome'] = 'Thalles Rangel Lopes';
     <div class="sidebarSearch">
       <input class="search" type="text" maxlength="50" placeholder="Procurar ou começar uma nova conversa">
     </div>
+
+    <div class="sidebarMsg">
+      <div class="chatSidebarMsg">
+        <img src="img/tiringa.jpg">
+        <p><b>Tiringa Presidente</b><p>
+        <span>Vote em mim</span>
+      </div>
+    </div>
   </div>
+
+
+
 
   <div class="menu">
     <img src="img/eu.jpeg">
@@ -35,7 +46,7 @@ $_SESSION['nome'] = 'Thalles Rangel Lopes';
   <div id="mensagens">
   </div>
   <form onsubmit="enviar(); return false" method="POST">
-    <input type="text" name="mensagem" id="mensagem" placeholder="Digite uma mensagem" maxlength="50" />
+    <input type="text" name="mensagem" id="mensagem" placeholder="Digite uma mensagem" maxlength="200" />
   </form>
 
 </body>  

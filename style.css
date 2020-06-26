@@ -13,7 +13,6 @@ body{
     border: 1px solid #DDD;
     border-radius: 3px;
     padding: 6px; 
-    margin: 4px;
     background-image: url('img/chatbackground.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -50,11 +49,11 @@ p{
     text-align: center;
     height:7vh;
     background-color: #FFF;
-    border-bottom: 0.5px solid #FFF;
+    border-bottom: 1px solid #95a5a6;
 }
 .sidebarMenu img{
-    padding: 5px 20px;
-    height: 45px;
+    padding: 9px 20px;
+    height: 40px;
     float: left;
     border-radius: 50%;
 }
@@ -64,15 +63,53 @@ p{
    border: none;
    color: #636e72;
 }
-.menu{
-    background: #F3F3F3;
-    height: 60px;
-    border: 1px solid #bdc3c7;
+
+.sidebarMsg{
+    background-color: #FFF;
+    border-bottom: 1px solid #95a5a6;
+    padding: 1px;
 }
-.menu img{
+
+.sidebarMsg img{
     padding: 5px 20px;
     height: 50px;
     float: left;
     border-radius: 50%;
 }
 
+.menu{
+    background: #F3F3F3;
+    height: 60px;
+    border: 1px solid #bdc3c7;
+}
+
+.menu img{
+    padding: 9px 20px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/*Balão da mensagem*/
+.baloMsgSend{
+    margin-left: 10%;
+    border-radius: 5px;
+    padding: 10px;
+    background:#FFF;
+    position:relative;
+    width: auto;
+    max-width: 400px;
+}
+.baloMsgSend:after{
+    content:'';
+    position:absolute;
+    left:-10px;
+    top:0;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #FFF;
+}

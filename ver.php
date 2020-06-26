@@ -15,8 +15,9 @@ if (isset($_SESSION['nome'])) {
             $mensagem = $linha['mensagem'];
             $hora = $linha['hora'];
             $ip = $linha['ip'];
-
-            echo "<p style='margin-top: 10px' title=".$hora."><b>".$nome."</b>: ".$mensagem."</p>";
+            
+        
+            echo "<p class='baloMsgSend' style='margin-top: 10px;  word-wrap: break-word;'>".$mensagem."</p>";
         }
     } else {
     echo "<p>Seja bem-vindo ".$nome ."</p>";
