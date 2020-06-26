@@ -18,7 +18,13 @@ $_SESSION['nome'] = 'Thalles Rangel Lopes';
 <body>
 
   <div class="sidebar">
-    aaaa
+    <div class="sidebarMenu">
+      <img src="img/eu.jpeg">
+    </div>
+
+    <div class="sidebarSearch">
+      <input class="search" type="text" maxlength="50" placeholder="Procurar ou começar uma nova conversa">
+    </div>
   </div>
 
   <div class="menu">

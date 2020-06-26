@@ -1,9 +1,7 @@
 
 $(document).ready(function(){
     $('#mensagens').load("ver.php");
-    
     var refreshId = setInterval( ver, 1000);
-    
     $.ajaxSetup({ cache: false });
 });
 
@@ -25,8 +23,7 @@ function enviar(){
         if (e.which == 13){
            var mensagem = $('#mensagem').val();
            document.querySelector('#mensagem').value = '';
-           console.log(mensagem);
-          
+        
             if(mensagem.length >= 1){
                 enviando = $.post(url,{mensagem:mensagem});
                 enviando.done(function(){

@@ -20,7 +20,7 @@ body{
     background-size: cover;
 }
 
-input[type='text'] {
+#mensagem{
     display: block;
     width: 800px;
     font-size: 14px;
@@ -37,12 +37,33 @@ p{
 .sidebar{
     float: left;
     height: 100vh;
-    width: 25%;
+    width: 30%;
     background-color: #ecf0f1;
 }
 
-
-
+.sidebarMenu{
+    background: #F3F3F3;
+    height: 11vh;
+    border-right: 1px solid #bdc3c7;
+}
+.sidebarSearch{
+    text-align: center;
+    height:7vh;
+    background-color: #FFF;
+    border-bottom: 0.5px solid #FFF;
+}
+.sidebarMenu img{
+    padding: 5px 20px;
+    height: 45px;
+    float: left;
+    border-radius: 50%;
+}
+.search{
+    margin-top: 10px;
+    width: 70%;
+   border: none;
+   color: #636e72;
+}
 .menu{
     background: #F3F3F3;
     height: 60px;
@@ -54,3 +75,4 @@ p{
     float: left;
     border-radius: 50%;
 }
+
